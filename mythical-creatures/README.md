@@ -16,7 +16,7 @@ Run the command `npm test mythical-creatures/test/unicorn-test.js`. To run other
 
 ### Creature Order
 
-- [ ] `unicorn`
+- [X] `unicorn`
 - [ ] `dragon`
 - [ ] `vampire`
 - [ ] `hobbit`
