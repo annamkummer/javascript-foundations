@@ -1,12 +1,12 @@
 class Vampire {
   constructor(name, pet) {
     this.name = name;
-    this.pet = pet;
+    this.pet = "bat";
     this.thirsty = true;
     this.ouncesDrank = 0
 
-    if (pet === undefined) {
-      this.pet = "bat"
+    if (pet) {
+      this.pet = pet;
     }
   }
 
