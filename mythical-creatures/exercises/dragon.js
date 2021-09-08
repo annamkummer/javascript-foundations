@@ -10,8 +10,6 @@ class Dragon {
     return `Hi, ${this.rider}!`
   }
 
-// this variable is not working
-
   eat() {
     this.counter += 1;
     if (this.counter >= 3) {
