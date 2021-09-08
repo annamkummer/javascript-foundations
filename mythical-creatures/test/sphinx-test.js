@@ -8,9 +8,9 @@ describe('Sphinx', () => {
 
   it('should have no name', () => {
     // instantiate a Sphinx object with no arguments
-
+    var sphinx = new Sphinx();
     // assert that the spinx's name is null
-
+    assert.equal(sphinx.name, null)
     //NOTE: We will not ask you to write your own tests in a mod 1 assessment, but it is good practice to prepare for mod 2!
   });
 
@@ -23,7 +23,7 @@ describe('Sphinx', () => {
   it('should collect riddles', () => {
     const sphinx = new Sphinx();
     const riddle = {
-      riddle: 'What word becomes shorter when you add two letters to it?',
+      riddle: 'What word becomes shorter when you add two letters to it.skip?',
       answer: 'short'
     };
 
@@ -62,7 +62,7 @@ describe('Sphinx', () => {
   it('should accept a correct answer and remove riddle from list', () => {
     const sphinx = new Sphinx();
     const riddle1 = {
-      riddle: 'What word becomes shorter when you add two letters to it?',
+      riddle: 'What word becomes shorter when you add two letters to it.skip?',
       answer: 'short'
     };
 
@@ -75,7 +75,7 @@ describe('Sphinx', () => {
   it('should accept answers in any order', () => {
     const sphinx = new Sphinx();
     const riddle1 = {
-      riddle: 'What word becomes shorter when you add two letters to it?',
+      riddle: 'What word becomes shorter when you add two letters to it.skip?',
       answer: 'short'
     };
     const riddle2 = {
@@ -162,7 +162,7 @@ describe('Sphinx', () => {
     assert.equal(rage, 'PSSSSSSS THIS HAS NEVER HAPPENED, HOW DID YOU KNOW THE ANSWER WAS \"Halfway, after that it\'s running out.\"???');
   });
 
-  it('should scream specifically about the last riddle to be answered', () => {
+  ('should scream specifically about the last riddle to be answered', () => {
     const sphinx = new Sphinx();
     const riddle1 = {
       riddle: 'What word becomes shorter when you add two letters to it?',
