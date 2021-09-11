@@ -1,4 +1,4 @@
-var Material = require('./material');
+// var Material = require('./material');
 
 class Craft {
   constructor(craft) {
@@ -15,9 +15,9 @@ class Craft {
 
   calculateProjectTotal() {
     for (var i = 0; i < this.materials.length; i++) {
-      var material = this.materials[i];
-      var newMaterial = new Material(material.name, material.price, material.amount, material.units)
-      var cost = newMaterial.calculateMaterialCost()
+      // var material = this.materials[i];
+      // var newMaterial = new Material(material.name, material.price, material.amount, material.units)
+      var cost = this.materials[i].calculateMaterialCost()
       this.totalCost += cost;
     }
     return this.totalCost;
